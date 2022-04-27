@@ -17,6 +17,8 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    private User user;
+
     @RequestMapping(value = "/index")
     public String index(Model model) {
         List<User> list = userService.findAllUsers();
