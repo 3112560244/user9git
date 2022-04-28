@@ -10,14 +10,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
 import java.util.Map;
-//this is my controller
+
 @Controller
 @RequestMapping(value = "/user")
 public class UserController {
     @Autowired
     private UserService userService;
 
-    private User user;
+
 
     @RequestMapping(value = "/index")
     public String index(Model model) {
