@@ -1,11 +1,14 @@
 package com.qx.controller;
 
+import com.qx.domain.Employee;
 import com.qx.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.xml.ws.soap.Addressing;
 import java.util.*;
@@ -52,10 +55,36 @@ public class EmployeeController {
         roles.add("项目经理");
         roles.add("人事经理");
         model.addAttribute("roles",roles);
+        }
 
 
+
+    @RequestMapping(value = "/add")
+    public String register(Model model){
+        Employee employee = new Employee();
+        model.addAttribute("emp",employee);
+        return "emp/add";
     }
 
+    @RequestMapping(value = "/add",method = RequestMethod.POST)
+    public String registrt(Employee employee){
+        empService.addEmp(employee);
+
+        return "forward:/emp/show";
+    }
+
+    @RequestMapping(value = "/show")
+    public String shows(Model model){
+        model.addAttribute("emps",empService.findAll());
+        return "emp/shows";
+    }
+
+    @RequestMapping(value = "/update/{empId}")
+    public String update(@PathVariable(value = "empId") String empId,Model model){
+        Employee employee = empService.findById(empId);
+        model.addAttribute("emp",employee);
+        return "emp/update";
+    }
 
 
 
