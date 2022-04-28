@@ -69,10 +69,11 @@ public class UserController {
 
 
     @RequestMapping(value = "/delete", method = RequestMethod.GET)
-    public String delete(String uid, Map<String, Object> map) {
+    public String delete(String uid, Model model) {
         userService.delete(uid);
         System.out.println(uid + "delete");
-        map.put("users", userService.findAllUsers());
+        model.addAttribute("users",userService.findAllUsers());
+        System.out.println("model");
         return "index";
     }
 
