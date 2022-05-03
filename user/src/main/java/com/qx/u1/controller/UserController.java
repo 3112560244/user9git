@@ -1,7 +1,6 @@
-package com.qx.controller;
+package com.qx.u1.controller;
 
-import com.qx.domain.User;
-import com.sun.org.apache.xpath.internal.operations.Bool;
+import com.qx.u1.domain.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;

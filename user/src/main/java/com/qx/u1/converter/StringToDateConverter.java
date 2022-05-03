@@ -1,4 +1,4 @@
-package com.qx.converter;
+package com.qx.u1.converter;
 
 import org.springframework.core.convert.converter.Converter;
 
