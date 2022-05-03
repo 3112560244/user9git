@@ -2,27 +2,32 @@
   <artifact type="exploded-war" name="user:war exploded">
     <output-path>$PROJECT_DIR$/out/artifacts/user_war_exploded</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="user/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="user" />
         </element>
         <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.hibernate.validator:hibernate-validator:6.2.2.Final" />
+          <element id="library" level="project" name="Maven: jakarta.validation:jakarta.validation-api:2.0.2" />
+          <element id="library" level="project" name="Maven: org.jboss.logging:jboss-logging:3.4.1.Final" />
+          <element id="library" level="project" name="Maven: com.fasterxml:classmate:1.5.1" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.3.18" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.3.18" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:5.3.18" />
+          <element id="library" level="project" name="Maven: javax.servlet.jsp.jstl:jstl:1.2" />
           <element id="library" level="project" name="Maven: javax.servlet.jsp.jstl:jstl-api:1.2" />
-          <element id="library" level="project" name="Maven: javax.servlet.jsp:jsp-api:2.1" />
-          <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.5" />
           <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.18.22" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.3.18" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.3.18" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context:5.3.18" />
           <element id="library" level="project" name="Maven: org.springframework:spring-core:5.3.18" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.3.18" />
           <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.3.18" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-web:5.3.18" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.3.18" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.3.18" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.3.18" />
           <element id="library" level="project" name="Maven: taglibs:standard:1.1.2" />
+          <element id="library" level="project" name="Maven: javax.servlet.jsp:jsp-api:2.1" />
+          <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.5" />
         </element>
       </element>
+      <element id="javaee-facet-resources" facet="user/web/Web" />
     </root>
   </artifact>
 </component>

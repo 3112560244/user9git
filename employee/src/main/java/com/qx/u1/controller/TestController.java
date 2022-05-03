@@ -1,4 +1,4 @@
-package com.qx.controller;
+package com.qx.u1.controller;
 
 public class TestController {
 }

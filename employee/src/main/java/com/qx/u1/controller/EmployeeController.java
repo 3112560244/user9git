@@ -1,7 +1,7 @@
-package com.qx.controller;
+package com.qx.u1.controller;
 
-import com.qx.domain.Employee;
-import com.qx.service.EmployeeService;
+import com.qx.u1.domain.Employee;
+import com.qx.u1.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

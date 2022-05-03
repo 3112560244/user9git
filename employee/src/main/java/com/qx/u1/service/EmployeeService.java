@@ -1,6 +1,6 @@
-package com.qx.service;
+package com.qx.u1.service;
 
-import com.qx.domain.Employee;
+import com.qx.u1.domain.Employee;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
