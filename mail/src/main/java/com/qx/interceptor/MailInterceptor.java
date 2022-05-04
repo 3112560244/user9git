@@ -17,7 +17,7 @@ public class MailInterceptor implements HandlerInterceptor {
         if(mail!=null){
             return true;
         }else{
-            response.sendRedirect(request.getContextPath()+"/main/login");
+            response.sendRedirect(request.getContextPath()+"/mail/login");
         }
         return false;
     }

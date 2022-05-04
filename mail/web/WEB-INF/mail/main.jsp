@@ -12,6 +12,7 @@
 </head>
 <body>
     <h2>邮箱首页</h2>
+    <h3>用户:${mail.mailName}</h3>
     <ol>
         <li><a href="${pageContext.request.contextPath}/mail/send">发送邮件</a> </li>
         <li><a href="${pageContext.request.contextPath}/mail/receive">接受邮件</a> </li>

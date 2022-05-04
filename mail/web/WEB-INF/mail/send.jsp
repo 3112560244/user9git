@@ -12,6 +12,7 @@
 </head>
 <body>
     <h2>发送邮件</h2>
+    <h3>用户:${mail.mailName}</h3>
     <a href="${pageContext.request.contextPath}/mail/main">回到主页面</a>
 </body>
 </html>

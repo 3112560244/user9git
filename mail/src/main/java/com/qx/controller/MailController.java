@@ -34,7 +34,7 @@ public class MailController {
         }else{
             System.out.println("邮箱地址或密码错误!");
             model.addAttribute("error","邮箱地址或密码错误");
-            return "main";
+            return "login";
         }
 
 
