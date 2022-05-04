@@ -17,8 +17,11 @@
     
     <mvc:interceptors>
         <mvc:interceptor>
+<!--            拦截的路径-->
             <mvc:mapping path="/mail/*"/>
+<!--            不需要拦截的路径-->
             <mvc:exclude-mapping path="/mail/login"/>
+<!--                声明自定义拦截器-->
             <bean class="com.qx.interceptor.MailInterceptor"/>
         </mvc:interceptor>
 
