@@ -28,7 +28,7 @@ public class MailController {
             return "login";
         }
 
-        if("qx@163.com".equals(mail.getMailName()) && "12345678".equals(mail.getMailPwd())){
+        if("swx@163.com".equals(mail.getMailName()) && "12345678".equals(mail.getMailPwd())){
             session.setAttribute("mail",mail);
             return "main";
         }else{
@@ -57,6 +57,7 @@ public class MailController {
 
     @RequestMapping(value = "/main")
     public String main(){
+
         System.out.println("邮箱主页面");
         return  "main";
     }
