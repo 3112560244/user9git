@@ -12,6 +12,7 @@
         <module>employee</module>
         <module>user</module>
         <module>mail</module>
+        <module>jsons</module>
     </modules>
 
     <properties>
