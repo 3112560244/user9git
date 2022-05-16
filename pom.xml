@@ -13,6 +13,7 @@
         <module>user</module>
         <module>mail</module>
         <module>jsons</module>
+        <module>mybatis</module>
     </modules>
 
     <properties>

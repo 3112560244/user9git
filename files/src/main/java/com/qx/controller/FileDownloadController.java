@@ -44,7 +44,7 @@ public class FileDownloadController {
     @RequestMapping(value = "/show",method = RequestMethod.GET)
     public String showDownloadFiles(HttpServletRequest request, Model model, HttpServletResponse response){
         //设置下载目录
-        String downloadPath = request.getServletContext().getRealPath("/uploadFiles");
+        String downloadPath = request.getServletContext().getRealPath("uploadFiles");
         System.out.println(downloadPath);
 
         File downloadFile = new File(downloadPath);

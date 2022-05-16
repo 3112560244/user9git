@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qx.dao.UserDao">
+
+    <insert id="save" parameterType="com.qx.domain.User">
+      insert into user (name,gender,birthday,mobile) values (#{name},#{gender},#{birthday},#{mobile})
+    </insert>
+    <resultMap id="Users" type="com.qx.domain.User">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="gender" column="gender"/>
+        <result property="birthday" column="birthday"/>
+        <result property="mobile" column="mobile"/>
+
+    </resultMap>
+
+    <select id="findAll" resultMap="Users">
+        select * from user;
+    </select>
+
+</mapper>

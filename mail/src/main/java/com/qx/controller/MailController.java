@@ -28,7 +28,7 @@ public class MailController {
             return "login";
         }
 
-        if("swx@163.com".equals(mail.getMailName()) && "12345678".equals(mail.getMailPwd())){
+        if("qx@163.com".equals(mail.getMailName()) && "12345678".equals(mail.getMailPwd())){
             session.setAttribute("mail",mail);
             return "main";
         }else{

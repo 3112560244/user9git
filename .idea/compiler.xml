@@ -11,6 +11,7 @@
         <module name="files" />
         <module name="mail" />
         <module name="user" />
+        <module name="mybatis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
